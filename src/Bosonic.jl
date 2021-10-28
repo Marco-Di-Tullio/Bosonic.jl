@@ -3,6 +3,5 @@ using SparseArrays
 using LinearAlgebra
 
 include("operators_fixed.jl")
-export my_f
-
+export basis_m, bdb, bbd, Op_fixed, b, bd
 end
