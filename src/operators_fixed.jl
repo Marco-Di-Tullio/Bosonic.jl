@@ -1,5 +1,4 @@
 
-
 function basis_m(n::Int64,m::Int64)
     len = binomial(n+m-1,m)
     base = spzeros(len,n)
@@ -63,7 +62,6 @@ end
 function bbd(n::Int64, m::Int64, i::Int64, j::Int64)
     return bdb(n, m, j, i)
 end
-
 
 function bdb(base::SparseMatrixCSC{Float64,Int64}, ind::Array{Int64,1}, m::Int64, i::Int64, j::Int64)
     l = size(base)[1]
