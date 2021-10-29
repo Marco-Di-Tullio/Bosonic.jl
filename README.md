@@ -6,4 +6,4 @@
 <!--[![Build Status](https://travis-ci.com/Marco-Di-Tullio/Bosonic.jl.svg?branch=main)](https://travis-ci.com/Marco-Di-Tullio/Bosonic.jl)-->
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/Marco-Di-Tullio/Bosonic.jl?svg=true)](https://ci.appveyor.com/project/Marco-Di-Tullio/Bosonic-jl)
 [![Coverage Status](https://coveralls.io/repos/github/Marco-Di-Tullio/Bosonic.jl/badge.svg?branch=main)](https://coveralls.io/github/Marco-Di-Tullio/Bosonic.jl?branch=main)
-[![Coverage](https://coveralls.io/repos/github/Marco-Di-Tullio/Bosonic.jl/badge.svg?branch=main)](https://coveralls.io/github/Marco-Di-Tullio/Bosonic.jl?branch=main)
+[![codecov](https://codecov.io/gh/Marco-Di-Tullio/Bosonic.jl/branch/main/graph/badge.svg?token=yVWSggChX4)](https://codecov.io/gh/Marco-Di-Tullio/Bosonic.jl)
