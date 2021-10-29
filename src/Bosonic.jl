@@ -3,5 +3,9 @@ using SparseArrays
 using LinearAlgebra
 
 include("operators_fixed.jl")
-export basis_m, bdb, bbd, Op_fixed, b, bd
+include("states_fixed.jl")
+include("correlations.jl")
+
+export basis_m, bdb, bbd, Op_fixed, dim, nume, le, basis, b, bd
+export State_fixed, st, ope, nume, dim, basis, typ, rhosp
 end
