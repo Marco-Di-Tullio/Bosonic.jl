@@ -3,7 +3,6 @@ language: julia
 notifications:
   email: false
 julia:
-  - 1.0
   - 1.6
   - nightly
 os:
@@ -15,7 +14,6 @@ arch:
 jobs:
   fast_finish: true
   allow_failures:
-    - julia: 1.0
     - julia: 1.6
     - julia: nightly
 after_success:
