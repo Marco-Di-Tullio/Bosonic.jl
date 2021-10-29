@@ -8,6 +8,8 @@ platform:
   - x64
 matrix:
   allow_failures:
+    - julia_version: 1.0
+    - julia_version: 1.6
     - julia_version: nightly
 branches:
   only:
