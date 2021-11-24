@@ -138,6 +138,9 @@ function bd(n::Int64, m::Int64, i::Int64)
         j = myfind(ind2, (s2[end:-1:1]'*base1[k,:])+(m+2)^(n-i))[1]
         op[j,k] = 1
     end
+    if m==0
+        return op'
+    end
     return op
 end
 
@@ -156,6 +159,9 @@ function bd(n::Int64, m::Int64, modes::Array{Int64,1})
     op  = bd(n,m,modes[1])
     for k in 2:l
         op = bd(n,m+k-1,modes[k])*op
+    end
+    if m==0
+        return op'
     end
     return op
 end
