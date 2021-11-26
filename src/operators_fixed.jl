@@ -139,7 +139,7 @@ function bd(n::Int64, m::Int64, i::Int64)
         op[j,k] = 1
     end
     if m==0
-        return op'
+        return op
     end
     return op
 end
@@ -160,9 +160,6 @@ function bd(n::Int64, m::Int64, modes::Array{Int64,1})
     for k in 2:l
         op = bd(n,m+k-1,modes[k])*op
     end
-    if m==0
-        return op'
-    end
     return op
 end
 
@@ -173,4 +170,10 @@ function b(n::Int64, m::Int64, modes::Array{Int64,1})
         op = b(n,m-k+1,modes[k])*op
     end
     return op
+end
+
+function state_form(v::SparseMatrixCSC{Float64, Int64})
+  i, j, w = findnz(v)
+  l = size(v)[1]
+  return sparsevec(i,w,l)
 end

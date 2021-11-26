@@ -17,4 +17,5 @@ using Test
     @test b(4,2,1)[1,7] == 1
     @test bd(4,1,[1,2])[15,2] == 1
     @test b(4,3,[1,2])[1,14] == 1
+    @test state_form(bd(4,0,[1,3,2,3]))[22] == 1
 end
