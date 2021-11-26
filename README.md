@@ -32,3 +32,5 @@ Alternatively, you can install the package from an editor/Jupyter notebook by ty
 ```Pkg.add("Bosonic")```
 
 ```using Bosonic```
+
+![](/images/quantuminfo.png)
